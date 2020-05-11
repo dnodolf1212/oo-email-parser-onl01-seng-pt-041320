@@ -12,9 +12,9 @@ class EmailAddressParser
   end
   
    def parse
-     split_mail = @email_addresses.split(", " || " ").uniq
-     split_mail.collect{|address| address.split(/\s|,/)}
-     split_mail
+     split_mail = @email_addresses.split(/\s|,/).uniq
+     #split_mail.collect{|address| address.split(/\s|,/)}
+     
 #binding.pry 
    end
    
