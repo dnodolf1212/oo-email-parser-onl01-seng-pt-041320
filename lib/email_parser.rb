@@ -11,7 +11,7 @@ class EmailAddressParser
   end
   
    def parse
-     split_mail = @email_addresses.split(", " || " ")
+     split_mail = @email_addresses.split(", " || " ").uniq
      split_mail.collect{ |address| address }
      
    end
